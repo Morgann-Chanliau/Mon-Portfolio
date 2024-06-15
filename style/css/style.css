@@ -232,9 +232,8 @@ main.transparent {
 }
 
 .slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    position: relative;
     width:90%;
 }
 
@@ -244,6 +243,7 @@ main.transparent {
     overflow-x: hidden;
     position: relative;
     display: flex;
+    justify-self: center;
 }
 
 .img {
@@ -278,6 +278,7 @@ main.transparent {
 
 #leftbtns {
     position: absolute;
+    bottom:0;
     left:5%;
 }
 
@@ -299,6 +300,7 @@ main.transparent {
 #rightbtn {
     position: absolute;
     overflow: hidden;
+    bottom: 0;
     right:12%;
     border-radius: 50%;
     box-shadow: 0 0 10px 2px rgb(11,11,11,0.2);
@@ -333,4 +335,30 @@ main.transparent {
 
 .playbtn.resumed {
     top:0 !important;
+}
+
+#topleftslider {
+    margin:0;
+    align-self:flex-start;
+    width:fit-content;
+    height: 35px;
+    color: rgba(247, 223, 30, 1);
+    font-weight: 600;
+}
+
+#botrightslider {
+    margin:0;
+    width:fit-content;
+    height: 26px;
+    justify-self: flex-end;
+    color: rgba(247, 223, 30, 1);
+    font-weight: 600;
+}
+
+.blue {
+    color: rgb(74, 156, 214);
+}
+
+.light-yellow {
+    color: rgba(220, 220, 170, 1);
 }
